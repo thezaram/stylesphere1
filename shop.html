@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleSphere</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: fit-content;
+      }
+      .main {
+        background-image: url("./images/Group\ 1\ \(1\).png");
+        background-size: 100% 100%;
+        background-position: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+      }
+      nav {
+        background-color: black;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+      }
+      nav img {
+        width: 60px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 20px;
+      }
+      nav a:hover {
+        color: #ffdfa4;
+      }
+      .rnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .rnav img {
+        width: 20px;
+        gap: 5px;
+      }
+
+      .mai {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        color: white;
+        margin: 10% 0;
+        border: 1px solid red;
+      }
+      .mai h4 {
+        font-size: 290%;
+        font-weight: 600;
+        width: 40%;
+        margin-bottom: 20px;
+      }
+      .mai p {
+        font-size: 60%;
+        width: 40%;
+        margin-bottom: 20px;
+        color: rgb(232, 224, 224);
+      }
+      .logo {
+        background-color: black;
+        position: relative;
+        width: 100%;
+      }
+      .filter img {
+        width: 100%;
+      }
+      .offer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        height: 25%;
+        margin: 40px;
+      }
+      .offer div img {
+        height: 35vh;
+        width: 20vw;
+        margin: 0 100px;
+        border: 1px solid blue;
+      }
+      .off {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+      }
+      .off :nth-child(1) {
+        font-size: 80%;
+        font-weight: 100;
+        padding: 5px;
+        border: 1px solid #ffe32a;
+      }
+      .off :nth-child(2) {
+        font-size: 270%;
+        font-weight: 400;
+      }
+      .off :nth-child(3) {
+        font-size: 80%;
+        font-weight: 100;
+      }
+      .highlight img {
+        width: 100%;
+        height: auto;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: #242424;
+        color: white;
+        width: 100%;
+        height: 50vh;
+      }
+      .top-left-footer {
+        width: 50%;
+        margin: 30px;
+        padding: 40px;
+        border: 1px solid blue;
+      }
+       .top-left-footer a{
+            display: inline-block;
+            text-decoration: none;
+            color:#c59202 ;
+            padding:10px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .top-left-footer a:hover{
+            color: #ffdfa4;
+        }
+
+      .top-right-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+        margin: auto;
+      }
+      .top-right-footer h3 {
+        width: 100%;
+        height: 35px;
+      }
+      .top-right-footer input {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        width: 300px;
+      }
+      .top-right-footer button {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        width: 300px;
+        border: none;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: black;
+        border: 1px solid green;
+        color: white;
+        height: 12vh;
+      }
+      .footer-bottom a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+      }
+      .footer-bottom a:hover {
+        color: #ffdfa4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <img src="./images/group.png" alt="" />
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <img src="./images/Group 740.png" alt="" />
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <div class="rnav">
+          <img src="./images/Group 269.png" alt="" />
+          <img src="./images/bag_8397063 1.png" alt="" />
+        </div>
+      </nav>
+      <div class="mai">
+        <h4>SPRING COLLECTIONS AVAILABLE</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos amet
+          neque cupiditate error tempore ipsa quod? Harum consequatur autem
+          enim, facilis omnis nihil odio vel corporis eligendi odit dolorem
+          maxime!
+        </p>
+      </div>
+      <div>
+        <!-- <img class="logo1" src="./images/Rectangle 8.png" alt=""> -->
+        <img class="logo" src="./images/Frame 3.png" alt="" />
+      </div>
+      <div class="filter">
+        <img src="./images/Frame 1707485491.png" alt="" />
+        <img src="./images/Frame 11.png" alt="" />
+        <img src="./images/Frame 12.png" alt="" />
+        <img src="./images/Frame 6 (1).png" alt="" />
+      </div>
+      <div class="offer">
+        <div>
+          <img
+            src="./images/marlon-schmeiski-HiSO3rkfLSM-unsplash-removebg-preview 1.png"
+            alt=""
+          />
+        </div>
+        <div class="off">
+          <p>Save up to 50% on first Order</p>
+          <h3>Special Offer</h3>
+          <p>Click & Collect First Free Delivery Offer</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="top-left-footer">
+          <img src="./images/Group 740.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
+            voluptates, molestiae quasi tempora eaque expedita similique
+            laboriosam, vero debitis eveniet harum cumque, ex iure nam!
+            Architecto pariatur hic illo delectus!
+          </p>
+          <a href="about.html">Read More ➡</a>
+        </div>
+        <div class="top-right-footer">
+          <h3>Email Newsletters</h3>
+          <input type="email" placeholder="Email Address" id="" />
+          <button>SUSCRIBE NOW</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="fleft">© 2025 StyleSphere. All rights reserved.</div>
+        <div class="fright">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="#">Booking</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
