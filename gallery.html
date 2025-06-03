@@ -48,14 +48,12 @@
         .main{
             display: flex;
             justify-content: space-between;
-            border:1px solid red ;
         }
         .main img{
             width: 27%;
             height: 100vh;
             margin: 50px 90px;
             padding: 0;
-            border: 1px solid yellow;
         }
         .main :nth-child(2){
             position: relative;
@@ -78,7 +76,6 @@
             font-size: 20px;
             width: 30%;
             height: 50vh;
-            border: 1px solid blue;
         }
         .edit h3{
             position: relative;
@@ -130,7 +127,6 @@
             color: white;
             font-size: 30px;
             font-weight: 600;
-            border:1px solid red ;
         }
         .inner h1{
             font-size: 40px;
@@ -140,8 +136,6 @@
         }
         .inner-links{
             display: flex;
-            /* justify-content: space-between; */
-            /* align-items: flex-end; */
             position: absolute;
             top: 90%;
             left: 50%;
@@ -189,7 +183,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             gap: 550px;
-            border: 1px solid purple;
         }
         .jacket-links a {
             text-decoration: none;
@@ -218,7 +211,6 @@
             width: 50%;
             margin: 30px;
             padding: 40px;
-            border: 1px solid blue;
         }
          .top-left-footer a{
             display: inline-block;
@@ -237,7 +229,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 1px solid red;
             margin: auto;
         }
         .top-right-footer h3{
@@ -266,7 +257,6 @@
             position: relative;
             background-color: black;
             bottom: -650px;
-             border: 1px solid green;
              color: white;
              height: 12vh;
         }
@@ -280,6 +270,53 @@
         .footer-bottom a:hover{
             color: #ffdfa4;
         }
+        @media (max-width:768px) {
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            nav{
+                width: 100%;
+            }
+            .main img{
+                width: 45%;
+                margin: 20px;
+            }
+            .edit{
+            position: relative;
+            top: -1200px;
+            }
+            .edit a{
+                position: inherit;
+                left: 45px;
+                width: 150px;
+                height: 60px;
+            }
+            .jacket{
+                position: relative;
+                top: -1200px;
+            }
+            .inner-links{
+                gap: 200px;
+            }
+            .jack{
+                position: relative;
+                top: -1200px;
+            }
+        .jacket-links{
+            gap: 200px;
+        }
+        .footer{
+            position: relative;
+            top: -1200px;
+        }
+        .footer-bottom{
+            position: relative;
+            margin-top: -1860px;
+        }
+        }
+       
 
     </style>
 </head>
@@ -335,7 +372,7 @@
         <div class="footer">
             <div class="top-left-footer">
                 <img src="./images/Group 740.png" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates, molestiae quasi tempora eaque expedita similique laboriosam, vero debitis eveniet harum cumque, ex iure nam! Architecto pariatur hic illo delectus!</p>
+                <p>Step into our world of style. Browse our gallery to see the latest collections, behind-the-scenes moments, and how our fashion comes to life. Each look tells a story bold, timeless, and uniquely you</p>
                 <a href="about.html">Read More ➡</a>
             </div>
             <div class="top-right-footer">

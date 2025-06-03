@@ -60,7 +60,6 @@
         align-items: left;
         color: white;
         margin: 10% 0;
-        border: 1px solid red;
       }
       .mai h4 {
         font-size: 290%;
@@ -95,7 +94,6 @@
         height: 35vh;
         width: 20vw;
         margin: 0 100px;
-        border: 1px solid blue;
       }
       .off {
         display: flex;
@@ -109,7 +107,6 @@
         font-size: 80%;
         font-weight: 100;
         padding: 5px;
-        border: 1px solid #ffe32a;
       }
       .off :nth-child(2) {
         font-size: 270%;
@@ -137,7 +134,6 @@
         width: 50%;
         margin: 30px;
         padding: 40px;
-        border: 1px solid blue;
       }
        .top-left-footer a{
             display: inline-block;
@@ -156,7 +152,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
         margin: auto;
       }
       .top-right-footer h3 {
@@ -184,7 +179,6 @@
         align-items: center;
         position: relative;
         background-color: black;
-        border: 1px solid green;
         color: white;
         height: 12vh;
       }
@@ -196,6 +190,79 @@
       }
       .footer-bottom a:hover {
         color: #ffdfa4;
+      }
+      @media  (max-width: 768px) {
+        .mai h1 {
+          font-size: 80px;
+        }
+        .mai p {
+          width: 40%;
+          font-size: 19px;
+        }
+        
+        .mai{
+          height: 70vh;
+          display: flex;
+          justify-content: center;
+        }
+        .img {
+          height: 350px;
+          width: 40%;
+        }
+        .off{
+          margin: 40px;
+        }
+        .footer {
+          align-items: center;
+          height: auto;
+        }
+      }
+      @media (max-width:424px) {
+        nav{
+          overflow: hidden;
+        }
+         .footer{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        .top-left-footer{
+          padding: 0 10px;
+          margin: 0;
+        }
+        .top-right-footer{
+          width: 40%;
+        }
+        .top-right-footer input{
+          width: 170px;
+        }
+        .top-right-footer button{
+          width: 170px;
+          font-size: 15px;
+        }
+        .mai h4{
+          font-size: 27px;
+        }
+        .offer{
+          display: flex;
+          justify-content: space-between;
+          height: 150px;
+          gap: 90px;
+          border: 1px solid red;
+        }
+         .img {
+          height: 183px;
+          width: 40%;
+          /* margin: 0 40px; */
+        }
+        .off{
+          /* margin: -20px; */
+          width: 50%;
+          /* padding: 10px; */
+        }
+        .off h3{
+          font-size: 5px;
+        }
       }
     </style>
   </head>
@@ -216,14 +283,10 @@
       <div class="mai">
         <h4>SPRING COLLECTIONS AVAILABLE</h4>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos amet
-          neque cupiditate error tempore ipsa quod? Harum consequatur autem
-          enim, facilis omnis nihil odio vel corporis eligendi odit dolorem
-          maxime!
+         Our collection offers versatile pieces that blends comfort, style and durability. Crafted from premium fabrics, they enhance everyday wear, making you look both classy and vibrant.
         </p>
       </div>
       <div>
-        <!-- <img class="logo1" src="./images/Rectangle 8.png" alt=""> -->
         <img class="logo" src="./images/Frame 3.png" alt="" />
       </div>
       <div class="filter">
@@ -233,7 +296,7 @@
         <img src="./images/Frame 6 (1).png" alt="" />
       </div>
       <div class="offer">
-        <div>
+        <div class="img">
           <img
             src="./images/marlon-schmeiski-HiSO3rkfLSM-unsplash-removebg-preview 1.png"
             alt=""
@@ -249,10 +312,7 @@
         <div class="top-left-footer">
           <img src="./images/Group 740.png" alt="" />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-            voluptates, molestiae quasi tempora eaque expedita similique
-            laboriosam, vero debitis eveniet harum cumque, ex iure nam!
-            Architecto pariatur hic illo delectus!
+            Step into our world of style. Browse our gallery to see the latest collections, behind-the-scenes moments, and how our fashion comes to life. Each look tells a story bold, timeless, and uniquely you
           </p>
           <a href="about.html">Read More ➡</a>
         </div>
