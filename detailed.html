@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: fit-content;
+        font-family: "inter", Courier, monospace;
+      }
+      .main {
+        background-image: url("./images/Rectangle\ 1.png");
+        background-size: 100% 100%;
+        background-position: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        color: white;
+      }
+      nav {
+        background: rgba(105, 104, 104, 0.2);
+        backdrop-filter: blur(10px);
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+      }
+      nav img:nth-child(2) {
+        width: 60px;
+        height: 50px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        margin: 0 20px;
+      }
+      nav a:hover {
+        color: #ffdfa4;
+      }
+      .rnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .rnav img {
+        width: 15px;
+        gap: 5px;
+      }
+      .rnav :nth-child(2) {
+        width: 20px;
+        height: 30px;
+      }
+      .mai {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 50px;
+        gap: 20px;
+      }
+      .mai h1 {
+        font-size: 50px;
+        width: 30px;
+      }
+      .mai p {
+        width: 400px;
+      }
+      .logo {
+        background-color: black;
+        position: relative;
+        width: 100%;
+      }
+      .details {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 100%;
+        padding: 80px 40px;
+        /* flex-direction: column; */
+      }
+      .detailed-one {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+      }
+      .detailed-two img {
+        width: 488px;
+        height: 665px;
+      }
+      .detailed-three {
+        margin: 60px;
+        color: black;
+        /* border: 1px solid black; */
+        height: 100vh;
+        width: 50%;
+      }
+      .detailed-three h4 {
+        font-size: 25px;
+        font-weight: 1500;
+        margin-bottom: 5px;
+      }
+      .loui {
+        font-family: "Ibarra Real Nova";
+        font-style: italic;
+        color: gray;
+        margin-bottom: 10px;
+      }
+      .reviews {
+        margin: 10px 0;
+        color: gray;
+        font-size: 10px;
+      }
+      .size {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+      }
+      .sizes {
+        display: flex;
+        gap: 5px;
+        /* justify-content: space-between; */
+        /* border: 1px solid black; */
+      }
+      .sizes p {
+        background-color: gray;
+        width: 28px;
+        padding: 2px;
+        text-align: center;
+        font-size: 12px;
+      }
+      .color {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+      }
+      .colors {
+        display: flex;
+        gap: 5px;
+      }
+      .black {
+        background-color: black;
+        width: 20px;
+        height: 20px;
+      }
+      .gray {
+        background-color: green;
+        width: 20px;
+        height: 20px;
+      }
+      .orange {
+        background-color: #d58d52;
+        width: 20px;
+        height: 20px;
+      }
+      .bulk {
+        background-color: #fcf3e6;
+        width: 200px;
+        height: 50px;
+        padding: 5px;
+      }
+      .bulk :nth-child(2) {
+        color: #d58d52;
+        margin-top: 5px;
+      }
+      .buy {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0;
+        width: 100%;
+      }
+      .buy a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 10px;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+      }
+      .buy p {
+        color: gray;
+        font-size: 12px;
+        padding: 10px;
+      }
+      .sku {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        margin: 5px;
+      }
+      .des {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        color: black;
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .des :nth-child(2) {
+        color: gray;
+      }
+      .para {
+        color: gray;
+        padding: 20px 130px;
+      }
+      .para p {
+        padding: 5px;
+      }
+      .para h3 {
+        /* font-style: italic; */
+        color: black;
+        text-align: center;
+        margin: 40px;
+        font-size: 35px;
+        font-family: 'oleo script', Courier, monospace;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: #242424;
+        color: white;
+        width: 100%;
+        height: 50vh;
+      }
+      .top-left-footer {
+        width: 50%;
+        margin: 30px;
+        padding: 40px;
+      }
+       .top-left-footer a{
+            display: inline-block;
+            text-decoration: none;
+            color:#c59202 ;
+            padding:20px 0;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .top-left-footer a:hover{
+            color: #ffdfa4;
+        }
+
+      .top-right-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      .top-right-footer h3 {
+        width: 100%;
+        height: 35px;
+      }
+      .top-right-footer input {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        width: 300px;
+      }
+      .top-right-footer button {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        width: 300px;
+        border: none;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: black;
+        color: white;
+        height: 12vh;
+      }
+      .footer-bottom a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+      }
+      .footer-bottom a:hover {
+        color: #ffdfa4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <img src="./images/group.png" alt="" />
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <img src="./images/Group 740.png" alt="" />
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <div class="rnav">
+          <img src="./images/Group 269.png" alt="" />
+          <img src="./images/bag_8397063 1.png" alt="" />
+        </div>
+      </nav>
+      <div class="mai">
+        <h1>DENIMS COLLECTIONS AVAILABLE</h1>
+        <p>
+          "Elevate your everyday style with Demini - where function meets fahion
+          in every stitch".
+        </p>
+      </div>
+      <div>
+        <img class="logo" src="./images/Frame 3.png" alt="" />
+      </div>
+      <p style="font-size: 20px; color: black">Home>menu>view product</p>
+      <div class="details">
+        <div class="detailed-one">
+          <img src="./images/Rectangle 153.png" alt="" />
+          <img src="./images/Rectangle 154.png" alt="" />
+          <img src="./images/Rectangle 155.png" alt="" />
+        </div>
+        <div class="detailed-two">
+          <img src="./images/Rectangle 156.png" alt="" />
+        </div>
+        <div class="detailed-three">
+          <h4>Brown Jacket</h4>
+          <p class="loui">Christain loui vinton</p>
+          <p class="reviews">
+            <img src="./images/Group 52.png" alt="" />2 Reviews
+          </p>
+          <h4>$30.00</h4>
+          <p>Quantity</p>
+          <div class="size">
+            <p>size</p>
+            <div class="sizes">
+              <p>S</p>
+              <p>M</p>
+              <p>L</p>
+              <p>XL</p>
+              <p>XXL</p>
+            </div>
+          </div>
+          <div class="color">
+            <p>Colour</p>
+            <div class="colors">
+              <div class="black"></div>
+              <div class="gray"></div>
+              <div class="orange"></div>
+            </div>
+          </div>
+          <div class="bulk">
+            <p>Call For Bulk Purchase</p>
+            <p>+234 000000</p>
+          </div>
+          <div class="buy">
+            <a href="#">Buy Now</a>
+            <img src="./images/Group 55.png" alt="" />
+            <p>Save For Later</p>
+          </div>
+          <div class="sku">
+            <p><b>SKU:</b>B68B34</p>
+            <p><b>Category: Jacket</b></p>
+            <p><b>Tags:</b>Fashion,jacket,Trends</p>
+          </div>
+        </div>
+      </div>
+      <div class="des">
+        <p>Description</p>
+        <p>Reviews(20)</p>
+      </div>
+      <hr />
+      <div class="para">
+        <p>
+          Tackle any forecast in style with our All-Weather Utility Jacket. Made
+          with a water-resistant outer shell and lightweight insulated lining,
+          it keeps you warm and dry without the bulk. Features include a
+          removable hood, adjustable cuffs, drawstring waist, and multiple
+          pockets for secure storage. Durable YKK zippers and a modern fit make
+          it ideal for everyday wear, travel, or outdoor adventures.
+        </p>
+        <p>
+          Stay warm, dry, and effortlessly stylish with our Premium All-Weather
+          Utility Jacket — the perfect blend of performance and fashion. Whether
+          you're braving city winds or heading out for a weekend hike, this
+          jacket is engineered to keep you comfortable in every climate.
+        </p>
+        <h3>Related Products</h3>
+      </div>
+      <div>
+        <img src="./images/Frame 12 (1).png" alt="">
+      </div>
+        <div class="footer">
+        <div class="top-left-footer">
+          <img src="./images/Group 740.png" alt="" />
+          <p>
+            Step into our world of style. Browse our gallery to see the latest collections, behind-the-scenes moments, and how our fashion comes to life. Each look tells a story bold, timeless, and uniquely you
+          </p>
+          <a href="about.html">Read More ➡</a>
+        </div>
+        <div class="top-right-footer">
+          <h3>Email Newsletters</h3>
+          <input type="email" placeholder="Email Address" id="" />
+          <button>SUSCRIBE NOW</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="fleft">© 2025 StyleSphere. All rights reserved.</div>
+        <div class="fright">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="#">Booking</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
